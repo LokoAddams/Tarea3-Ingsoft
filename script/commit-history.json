@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-08-19T09:06:25.000Z",
+      "message": "multiplicador",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 52,
+      "additions": 50,
+      "deletions": 2,
+      "date": "2025-08-19"
+    },
+    "coverage": 50,
+    "test_count": 5,
+    "failed_tests": 4,
+    "conclusion": "failure"
+  }
+]
