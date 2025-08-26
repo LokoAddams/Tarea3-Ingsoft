@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d80574818465da8bb044fea1d1705cfc26954187",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-08-26T06:56:59.000Z",
       "message": "feat: saludo por género",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/d80574818465da8bb044fea1d1705cfc26954187"
     },
     "stats": {
       "total": 44,
@@ -110,6 +110,25 @@
     },
     "coverage": 70,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-08-26T07:11:01.000Z",
+      "message": "feat: saludo por edad (>30 con trato formal)",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 43,
+      "deletions": 14,
+      "date": "2025-08-26"
+    },
+    "coverage": 89.29,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
