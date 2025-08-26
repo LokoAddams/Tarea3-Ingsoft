@@ -21,4 +21,13 @@ test("edad > 30 aplica trato formal", () => {
   expect(saludar({ name:"Carlos", age:35, gender:"M" }))
     .toBe("Buenas noches, Sr. Carlos!");
 });
+test("saludo formal sin género en español", () => {
+  jest.setSystemTime(new Date("2024-01-01T20:00:00"));
+  expect(saludar({ name: "Alex", age: 40 })).toBe("Buenas noches, Estimad@ Alex!");
+});
+
+test("saludo formal sin género en inglés", () => {
+  jest.setSystemTime(new Date("2024-01-01T20:00:00"));
+  expect(saludar({ name: "Alex", age: 40, lang: "en" })).toBe("Good evening, Dear Alex!");
+});
 

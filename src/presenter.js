@@ -30,6 +30,7 @@ formMul.addEventListener("submit", (event) => {
 const nombreInput = document.querySelector("#nombre-usuario");
 const edadInput = document.querySelector("#edad-usuario");
 const generoSelect = document.querySelector("#genero-usuario");
+const idiomaSelect = document.querySelector("#idioma");
 const saludarButton = document.querySelector("#saludar-button");
 const saludoDiv = document.querySelector("#saludo-div");
 
@@ -37,5 +38,6 @@ saludarButton.addEventListener("click", () => {
   const nombre = nombreInput.value;
   const edad = parseInt(edadInput.value, 10);
   const genero = generoSelect.value;
-  saludoDiv.innerHTML = `<p>${saludar({ name: nombre, age: edad, gender: genero })}</p>`;
+  const idioma = idiomaSelect.value;
+  saludoDiv.innerHTML = `<p>${saludar({ name: nombre, age: edad, gender: genero, lang: idioma })}</p>`;
 });
