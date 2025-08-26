@@ -27,9 +27,11 @@ formMul.addEventListener("submit", (event) => {
 });
 
 // Saludador
+const nombreInput = document.querySelector("#nombre-usuario");
 const saludarButton = document.querySelector("#saludar-button");
 const saludoDiv = document.querySelector("#saludo-div");
 
 saludarButton.addEventListener("click", () => {
-  saludoDiv.innerHTML = `<p>${saludar()}</p>`;
+  const nombre = nombreInput.value;
+  saludoDiv.innerHTML = `<p>${saludar({ name: nombre })}</p>`;
 });
