@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fdd69c4e28ca1e0c2a9b81c449ad9a7484c48ea9",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-08-26T06:53:08.000Z",
       "message": "feat: saludo según hora",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/fdd69c4e28ca1e0c2a9b81c449ad9a7484c48ea9"
     },
     "stats": {
       "total": 31,
@@ -91,6 +91,25 @@
     },
     "coverage": 91.67,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-08-26T06:56:59.000Z",
+      "message": "feat: saludo por género",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 30,
+      "deletions": 14,
+      "date": "2025-08-26"
+    },
+    "coverage": 70,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

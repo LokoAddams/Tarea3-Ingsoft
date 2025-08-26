@@ -28,10 +28,12 @@ formMul.addEventListener("submit", (event) => {
 
 // Saludador
 const nombreInput = document.querySelector("#nombre-usuario");
+const generoSelect = document.querySelector("#genero-usuario");
 const saludarButton = document.querySelector("#saludar-button");
 const saludoDiv = document.querySelector("#saludo-div");
 
 saludarButton.addEventListener("click", () => {
   const nombre = nombreInput.value;
-  saludoDiv.innerHTML = `<p>${saludar({ name: nombre })}</p>`;
+  const genero = generoSelect.value;
+  saludoDiv.innerHTML = `<p>${saludar({ name: nombre, gender: genero })}</p>`;
 });

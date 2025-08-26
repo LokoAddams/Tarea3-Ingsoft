@@ -4,14 +4,25 @@ function tramo(h) {
   return "evening";
 }
 
-export function saludar({ name = "", lang = "es", date = new Date() } = {}) {
+function tratoPorGenero(g, lang="es") {
+  if (lang === "en") return g === "M" ? "Mr." : g === "F" ? "Ms." : "";
+  return g === "M" ? "señor" : g === "F" ? "señora" : "";
+}
+
+export function saludar({ name = "", gender = "", lang = "es", date = new Date() } = {}) {
   const h = date.getHours();
   const slot = tramo(h);
-  const parts = {
-    es: { morning: "Buenos días", afternoon: "Buenas tardes", evening: "Buenas noches", hello: "Hola" },
-    en: { morning: "Good morning", afternoon: "Good afternoon", evening: "Good evening", hello: "Hello" },
+  const L = {
+    es: { morning: "Buenos días", afternoon: "Buenas tardes", evening: "Buenas noches" },
+    en: { morning: "Good morning", afternoon: "Good afternoon", evening: "Good evening" },
   }[lang || "es"];
+  const cabeza = L[slot];
 
-  const cabeza = parts[slot] || parts.hello;
-  return name ? `${cabeza}, ${lang === "en" ? name : name}!` : `${cabeza}!`;
+  if (name) {
+    const trato = tratoPorGenero(gender, lang);
+    if (lang === "en") return trato ? `${cabeza}, ${trato} ${name}!` : `${cabeza}, ${name}!`;
+    return trato ? `${cabeza}, ${trato} ${name}!` : `${cabeza}, ${name}!`;
+  }
+  return `${cabeza}!`;
 }
+
