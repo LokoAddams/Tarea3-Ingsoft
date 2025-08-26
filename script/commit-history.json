@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "0a651ac40dda22b45bf918ff49720e88905823e9",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-08-19T09:06:25.000Z",
       "message": "multiplicador",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/0a651ac40dda22b45bf918ff49720e88905823e9"
     },
     "stats": {
       "total": 52,
@@ -17,5 +17,24 @@
     "test_count": 5,
     "failed_tests": 4,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-08-26T06:46:35.000Z",
+      "message": "feat: saludo básico con \"hola\"",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 20,
+      "deletions": 1,
+      "date": "2025-08-26"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

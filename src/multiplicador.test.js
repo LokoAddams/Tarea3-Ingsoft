@@ -1,5 +1,6 @@
 // multiplicador.test.js
-const multiplicador = require('./multiplicador');
+
+import multiplicador from "./multiplicador.js";
 
 describe('multiplicador', () => {
   it('debe multiplicar dos números positivos', () => {
