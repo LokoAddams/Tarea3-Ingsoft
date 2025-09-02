@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d2574ee651ae28e16f446eb1beccc5516a9f602c",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-09-02T10:09:28.000Z",
       "message": "<feat>:<Empieza el set>",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/d2574ee651ae28e16f446eb1beccc5516a9f602c"
     },
     "stats": {
       "total": 44,
       "additions": 44,
       "deletions": 0,
+      "date": "2025-09-02"
+    },
+    "coverage": 92.86,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-09-02T10:13:55.000Z",
+      "message": "<feat>: <Jugador 1 anota>",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
       "date": "2025-09-02"
     },
     "coverage": 92.86,
