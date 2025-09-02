@@ -133,18 +133,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5b2f608c95dfdb9f91f83f73e57f5dbaa0cb33ab",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-08-26T07:18:04.000Z",
       "message": "feat: soporte de idioma (es/en)",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/5b2f608c95dfdb9f91f83f73e57f5dbaa0cb33ab"
     },
     "stats": {
       "total": 19,
       "additions": 18,
       "deletions": 1,
       "date": "2025-08-26"
+    },
+    "coverage": 92.86,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-09-02T10:09:28.000Z",
+      "message": "<feat>:<Empieza el set>",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 44,
+      "additions": 44,
+      "deletions": 0,
+      "date": "2025-09-02"
     },
     "coverage": 92.86,
     "test_count": 11,

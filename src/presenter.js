@@ -1,6 +1,7 @@
 import sumar from "./sumador";
 import multiplicador from "./multiplicador";
 import { saludar } from "./Saludador/saludador";
+import TennisGame from "./TennisScore/tennisGame";
 
 const first = document.querySelector("#primer-numero");
 const second = document.querySelector("#segundo-numero");
@@ -41,3 +42,22 @@ saludarButton.addEventListener("click", () => {
   const idioma = idiomaSelect.value;
   saludoDiv.innerHTML = `<p>${saludar({ name: nombre, age: edad, gender: genero, lang: idioma })}</p>`;
 });
+
+// Tennis Score
+const tennisScoreDiv = document.querySelector("#tennis-score");
+const player1Button = document.querySelector("#player1-button");
+const player2Button = document.querySelector("#player2-button");
+
+const tennisGame = new TennisGame();
+
+player1Button.addEventListener("click", () => {
+  tennisGame.player1Scores();
+  tennisScoreDiv.textContent = tennisGame.score();
+});
+
+player2Button.addEventListener("click", () => {
+  tennisGame.player2Scores();
+  tennisScoreDiv.textContent = tennisGame.score();
+});
+
+tennisScoreDiv.textContent = tennisGame.score();
