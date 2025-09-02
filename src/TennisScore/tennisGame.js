@@ -9,6 +9,10 @@ class TennisGame {
     this.p1++;
   }
 
+  player2Scores() {
+    this.p2++;
+  }
+
   score() {
     return `${this.points[this.p1]}-${this.points[this.p2]}`;
   }
