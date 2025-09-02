@@ -64,3 +64,24 @@ describe('Tennis Score - Advantage', () => {
     expect(game.score()).toBe('Advantage Player 1');
   });
 });
+describe('Tennis Score - Game for Player 1', () => {
+  test('si Player 1 llega a 4 puntos con diferencia ≥ 2 (sin Deuce), es Game for Player 1', () => {
+    const game = new TennisGame();
+    game.player1Scores(); // 15- Love
+    game.player1Scores(); // 30- Love
+    game.player1Scores(); // 40- Love
+    game.player1Scores(); // Game
+    expect(game.score()).toBe('Game for Player 1');
+  });
+
+  test('desde Deuce → Advantage P1 → punto para P1 => Game for Player 1', () => {
+    const game = new TennisGame();
+    // Deuce
+    game.player1Scores(); game.player1Scores(); game.player1Scores(); // 40
+    game.player2Scores(); game.player2Scores(); game.player2Scores(); // 40
+
+    game.player1Scores(); // Advantage P1
+    game.player1Scores(); // Game P1
+    expect(game.score()).toBe('Game for Player 1');
+  });
+});
