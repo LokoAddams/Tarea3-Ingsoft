@@ -14,6 +14,11 @@ class TennisGame {
   }
 
   score() {
+    // Caso especial: Deuce
+    if (this.p1 >= 3 && this.p2 >= 3 && this.p1 === this.p2) {
+      return 'Deuce';
+    }
+
     return `${this.points[this.p1]}-${this.points[this.p2]}`;
   }
 }

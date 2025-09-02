@@ -1,4 +1,4 @@
-const TennisGame = require('../src/TennisScore/tennisGame');
+const TennisGame = require('./tennisGame.js');
 
 describe('Tennis Score - Inicio del game', () => {
   test('al iniciar, el tablero muestra Love-Love', () => {
@@ -27,6 +27,23 @@ describe('Tennis Score - Jugador 2 anota', () => {
     game.player1Scores();
     game.player2Scores();
     expect(game.score()).toBe('15-15');
+  });
+});
+describe('Tennis Score - Deuce', () => {
+  test('cuando ambos jugadores llegan a 40, el marcador es Deuce', () => {
+    const game = new TennisGame();
+
+    // Jugador 1: 3 puntos → 40
+    game.player1Scores();
+    game.player1Scores();
+    game.player1Scores();
+
+    // Jugador 2: 3 puntos → 40
+    game.player2Scores();
+    game.player2Scores();
+    game.player2Scores();
+
+    expect(game.score()).toBe('Deuce');
   });
 });
 

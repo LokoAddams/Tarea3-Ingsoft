@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "88a991a43d889ed2ef6b0f4922e66e9c90a91df0",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-09-02T10:20:17.000Z",
       "message": "Jugador 2 anota",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/88a991a43d889ed2ef6b0f4922e66e9c90a91df0"
     },
     "stats": {
       "total": 20,
@@ -205,6 +205,25 @@
     },
     "coverage": 92.86,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-09-02T10:24:39.000Z",
+      "message": "<feat>: <Deuce>",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 23,
+      "deletions": 1,
+      "date": "2025-09-02"
+    },
+    "coverage": 94.59,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }
