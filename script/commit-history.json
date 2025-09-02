@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "717073a7abc342f4e9b54f265efc79a90b9714fc",
     "author": "LokoAddams",
     "commit": {
       "date": "2025-09-02T10:24:39.000Z",
       "message": "<feat>: <Deuce>",
-      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/717073a7abc342f4e9b54f265efc79a90b9714fc"
     },
     "stats": {
       "total": 24,
@@ -224,6 +224,25 @@
     },
     "coverage": 94.59,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "LokoAddams",
+    "commit": {
+      "date": "2025-09-02T10:27:28.000Z",
+      "message": "<feat>: <Advantage Player X>",
+      "url": "https://github.com/LokoAddams/Tarea3-Ingsoft/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 25,
+      "deletions": 2,
+      "date": "2025-09-02"
+    },
+    "coverage": 94.87,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }

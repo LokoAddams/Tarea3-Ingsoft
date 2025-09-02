@@ -14,12 +14,18 @@ class TennisGame {
   }
 
   score() {
-    // Caso especial: Deuce
+    // Deuce
     if (this.p1 >= 3 && this.p2 >= 3 && this.p1 === this.p2) {
       return 'Deuce';
     }
 
-    return `${this.points[this.p1]}-${this.points[this.p2]}`;
+    // Advantage (desde Deuce, diferencia de 1)
+    if (this.p1 >= 3 && this.p2 >= 3 && Math.abs(this.p1 - this.p2) === 1) {
+      return this.p1 > this.p2 ? 'Advantage Player 1' : 'Advantage Player 2';
+    }
+
+    // Marcador normal
+    return `${this.points[this.p1] ?? '40'}-${this.points[this.p2] ?? '40'}`;
   }
 }
 

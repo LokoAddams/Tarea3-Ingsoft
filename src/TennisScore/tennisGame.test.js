@@ -47,3 +47,20 @@ describe('Tennis Score - Deuce', () => {
   });
 });
 
+describe('Tennis Score - Advantage', () => {
+  test('desde Deuce, si anota el Jugador 1 → Advantage Player 1', () => {
+    const game = new TennisGame();
+    // llegar a Deuce (40-40)
+    game.player1Scores();
+    game.player1Scores();
+    game.player1Scores();
+    game.player2Scores();
+    game.player2Scores();
+    game.player2Scores();
+
+    // punto de Player 1 desde Deuce
+    game.player1Scores();
+
+    expect(game.score()).toBe('Advantage Player 1');
+  });
+});
